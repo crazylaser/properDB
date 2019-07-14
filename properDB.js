@@ -3,6 +3,7 @@
  ****************************/
 log = console.log;
 function errorCB(tx, err) {
+    console.log("\nError processing SQL: "+JSON.stringify(err));
     throw err;
 }
 
